@@ -1,0 +1,18 @@
+
+  @property --sky-top {
+  syntax: '<color>';
+    inherits: true;
+    initial-value: #020111;
+    }
+  
+    @property --sky-mid {
+    syntax: '<color>';
+      inherits: true;
+      initial-value: #20202c;
+      }
+  
+      @property --sky-bottom {
+      syntax: '<color>';
+        inherits: true;
+        initial-value: #20202c;
+        }
