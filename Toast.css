@@ -76,7 +76,7 @@
 
         /* End */
 
-        /* Button haking Effect */
+        /* Button shaking Effect */
         button.ant-btn:has(svg.lucide-messages-square)::after,
         button.ant-btn.ant-btn-default:has(.anticon-star)::after {
             content: "";
@@ -84,19 +84,13 @@
             inset: -2px !important;
             border-radius: inherit;
             background: 0 0;
-            box-shadow: 0 0 0 0 var(--sonar-color);
+            box-shadow: 0 0 0 0 var(--primary-color);
             animation: 10s linear infinite shivery-shake !important;
             pointer-events: none;
             z-index: 1;
         }
 
         /* End */
-
-        /* More Main Button Stuff (Chat Button) */
-        button.ant-btn:has(svg.lucide-messages-square)::after {
-            --sonar-color: var(--primary-color);
-            /* Replaced --accent */
-        }
 
         button.ant-btn:has(svg.lucide-messages-square) {
             font-size: 14px !important;
