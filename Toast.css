@@ -12,6 +12,13 @@
 
         /* End */
 
+        /* Fixes Weird Line Thingy */
+        div.ant-layout.abs-100-dvh.css-f6nzt4 {
+                Display: none;
+        }
+
+        /* End */
+
         /* Styles tags */
         .ant-tag {
             background-color: var(--primary-shadow) !important;
