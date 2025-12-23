@@ -14,7 +14,7 @@
 
         /* Fixes Weird Line Thingy */
         div.ant-layout.abs-100-dvh.css-f6nzt4 {
-                
+                border: none !important;
         }
 
         /* End */
