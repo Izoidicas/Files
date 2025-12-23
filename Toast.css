@@ -1,4 +1,4 @@
-/* --- CHUB STUFF (Updated to use :root variables) --- */
+/* --- CHUB STUFF --- */
 
         /* Uses the full image */
         [class*="ant-image"] {
@@ -19,15 +19,6 @@
             color: var(--title-color);
             padding: 0px 6PX;
             font-size: 14px !important;
-        }
-
-        /* End */
-
-        /* Removes the top search bar */
-        .ant-ribbon.ant-ribbon-placement-end,
-        .no-vertical-anything *,
-        div#chara-list {
-            display: none !important;
         }
 
         /* End */
@@ -85,7 +76,7 @@
 
         /* End */
 
-        /* Button Sonar Effect */
+        /* Button haking Effect */
         button.ant-btn:has(svg.lucide-messages-square)::after,
         button.ant-btn.ant-btn-default:has(.anticon-star)::after {
             content: "";
@@ -359,7 +350,7 @@
 
         /* Standard list item box */
         .info-nugget-box {
-            background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(20, 40, 80, 0.85) 50%, rgba(0, 0, 0, 0.9) 100%);
+            background: var(--gradient-box-default);
             border: 3px solid var(--primary-subtle);
             border-radius: 8px;
             padding: 15px;
@@ -367,14 +358,14 @@
             position: relative;
             backdrop-filter: blur(3px);
             transition: all 0.3s ease;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), 0 0 5px rgba(42, 82, 152, 0.5);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), 0 0 5px rgba(106, 13, 173, 0.5);
         }
 
         .info-nugget-box:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(42, 82, 152, 0.6), 0 0 15px rgba(109, 213, 250, 0.3);
+            box-shadow: 0 4px 15px rgba(106, 13, 173, 0.6), 0 0 15px rgba(213, 0, 249, 0.3);
             border-color: var(--title-color);
-            background: linear-gradient(135deg, rgba(10, 10, 10, 0.95) 0%, rgba(42, 82, 152, 0.85) 50%, rgba(10, 10, 10, 0.95) 100%);
+            background: var(--gradient-box-hover);
             transition: 0.5s;
         }
 
@@ -391,13 +382,13 @@
             left: 15px;
             right: 15px;
             height: 1px;
-            background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+            background: var(--gradient-divider);
             opacity: 0.5;
         }
 
         /* The Special Centered Boxes (Usage, Thank you, Description) */
         .center-stage-info-box {
-            background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(20, 40, 80, 0.85) 50%, rgba(0, 0, 0, 0.9) 100%);
+            background: var(--gradient-box-default);
             border: 3px solid var(--primary-subtle);
             border-radius: 8px;
             padding: 20px;
@@ -405,7 +396,7 @@
             position: relative;
             backdrop-filter: blur(5px);
             transition: all 0.3s ease;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), 0 0 5px rgba(42, 82, 152, 0.5);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), 0 0 5px rgba(106, 13, 173, 0.5);
         }
 
         /* Specific override for centering the title in these boxes */
@@ -416,9 +407,9 @@
 
         .center-stage-info-box:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(42, 82, 152, 0.6), 0 0 15px rgba(109, 213, 250, 0.3);
+            box-shadow: 0 4px 15px rgba(106, 13, 173, 0.6), 0 0 15px rgba(213, 0, 249, 0.3);
             border-color: var(--title-color);
-            background: linear-gradient(135deg, rgba(10, 10, 10, 0.95) 0%, rgba(42, 82, 152, 0.85) 50%, rgba(10, 10, 10, 0.95) 100%);
+            background: var(--gradient-box-hover);
             transition: 0.5s;
         }
 
@@ -435,14 +426,14 @@
             left: 15px;
             right: 15px;
             height: 1px;
-            background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+            background: var(--gradient-divider);
             opacity: 0.5;
         }
 
 
         /* The "THE 13 GREETINGS" Header Box */
         .doom-header-box {
-            background: linear-gradient(135deg, rgb(0, 0, 0) 0%, rgb(0, 20, 60) 50%, rgb(0, 0, 0) 100%);
+            background: var(--gradient-header);
             border: 3px solid var(--primary-color);
             border-radius: 8px;
             padding: 15px;
@@ -450,7 +441,7 @@
             position: relative;
             backdrop-filter: blur(3px);
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8), 0 0 15px rgba(42, 82, 152, 0.5);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8), 0 0 15px rgba(106, 13, 173, 0.5);
             color: var(--title-color);
             font-size: clamp(30px, 3vw, 14px) !important;
             text-shadow: 0 0 5px var(--primary-glow);
@@ -483,7 +474,7 @@
         }
 
         .slideshow-2-imgs img {
-            animation: cycle-2 15s infinite;
+            animation: cycle-2 20s infinite;
         }
 
         .slideshow-2-imgs img:nth-child(1) {
@@ -491,7 +482,7 @@
         }
 
         .slideshow-2-imgs img:nth-child(2) {
-            animation-delay: 7.5s;
+            animation-delay: 10s;
         }
 
         @keyframes cycle-2 {
@@ -693,9 +684,6 @@
             pointer-events: none;
         }
 
-        /* End */
-
-        /* This edits some properties of the main character image to prep it for hover effects */
         .ant-image-mask {
             position: absolute;
             top: 0;
@@ -706,7 +694,6 @@
             transition: opacity 1s;
         }
 
-        /* The aforementioned hover effects */
         .ant-image-mask:hover {
             background-size: cover !important;
             background-position: center !important;
@@ -714,9 +701,6 @@
             transition-duration: 0.3s !important;
         }
 
-        /* End */
-
-        /* Here are the animations used in the hover effect */
         @keyframes glitch-shake {
             0% {
                 transform: translate(0, 0);
@@ -815,14 +799,9 @@
             }
         }
 
-        /* End */
-
-        /* This changes the top left icon */
         .ant-layout-header .ant-menu-overflow>li:first-child img {
             content: url(https://raw.githubusercontent.com/Izoidicas/Files/refs/heads/main/Mini%20Toast%20Icon.webp) !important;
             width: 50px !important;
             height: 50px !important;
             object-fit: contain !important;
         }
-
-        /* End */
