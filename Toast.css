@@ -13,8 +13,8 @@
         /* End */
 
         /* Fixes Weird Line Thingy */
-        div.ant-layout.abs-100-dvh.css-f6nzt4 {
-                border: none !important;
+        .ant-image-preview-root { 
+                box-shadow: none !important; 
         }
 
         /* End */
